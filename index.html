@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midterm Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  
+  <!-- Logo with SVG -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="40" stroke="green" stroke-width="5" fill="lightblue"/>
+          <text x="50%" y="55%" font-size="18" text-anchor="middle" fill="black">LOGO</text>
+        </svg>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#top">Top</a></li>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#palestine">Palestine</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#footer">Bottom</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Build Your Mindset Section -->
+  <section id="intro" class="mindset">
+    <h1>Build Your Mindset</h1>
+    <p>This section covers half the laptop screen height.</p>
+  </section>
+
+  <!-- Palestine Governorates Cards -->
+  <section id="palestine" class="cards">
+    <h2>Palestine Governorates</h2>
+    <div class="card-grid">
+      <!-- Example Card -->
+      <div class="card">
+        <img src="bethlehem.jpg" alt="Bethlehem">
+        <h3>Bethlehem</h3>
+        <p>City known for its history and culture.</p>
+      </div>
+      <!-- Repeat for all governorates (Hebron, Jenin, Jericho, etc.) -->
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact-form">
+    <h2>Contact Me</h2>
+    <form>
+      <label>Name: <input type="text" name="name" required></label><br>
+      <label>Subject: <input type="text" name="subject" required></label><br>
+      <label>Phone: <input type="number" name="phone" required></label><br>
+      <label>Email: <input type="email" name="email" pattern=".+@ftu\.ac\.th" required></label><br>
+      <label>Secret Word: 
+        <input type="password" name="secret" minlength="8"
+               pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[\W_]).{8,}" required>
+      </label><br>
+      <label>Message: <textarea name="message" required></textarea></label><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Midterm Challenge. All rights reserved.</p>
+  </footer>
+
+  <!-- Go to Top Button -->
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="top-btn">⬆ Top</button>
+</body>
+</html>
