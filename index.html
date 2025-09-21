@@ -1,75 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Midterm Challenge</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Challenge</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
   
-  <!-- Logo with SVG -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <svg width="50" height="50" viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="40" stroke="green" stroke-width="5" fill="lightblue"/>
-          <text x="50%" y="55%" font-size="18" text-anchor="middle" fill="black">LOGO</text>
-        </svg>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+              <svg viewBox="0 0 100 60" class="logo-svg">
+    <rect x="0" y="0" width="100" height="20" fill="black" />
+    <rect x="0" y="20" width="100" height="20" fill="white" />
+    <rect x="0" y="40" width="100" height="20" fill="green" />
+    <polygon points="0,0 40,30 0,60" fill="red" />
+                </svg>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#top">Top</a></li>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#governorates">Palestine</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#footer">Bottom</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro" class="mindset">
+      <div class="overlay">
+        <h1>Build Your Mindset</h1>
+        <p>This section covers half the laptop screen height.</p>
       </div>
-      <ul class="nav-links">
-        <li><a href="#top">Top</a></li>
-        <li><a href="#intro">Introduction</a></li>
-        <li><a href="#palestine">Palestine</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#footer">Bottom</a></li>
-      </ul>
-    </nav>
-  </header>
+    </section>
 
-  <!-- Build Your Mindset Section -->
-  <section id="intro" class="mindset">
-    <h1>Build Your Mindset</h1>
-    <p>This section covers half the laptop screen height.</p>
-  </section>
-
-  <!-- Palestine Governorates Cards -->
-  <section id="palestine" class="cards">
+    <section id="governorates" class="cards">
     <h2>Palestine Governorates</h2>
     <div class="card-grid">
-      <!-- Example Card -->
+
       <div class="card">
-        <img src="bethlehem.jpg" alt="Bethlehem">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Heading_to_Bethlehem_Gloria_in_Excelsis_Deo_by_ArmAg_%281%29.jpg/1024px-Heading_to_Bethlehem_Gloria_in_Excelsis_Deo_by_ArmAg_%281%29.jpg
+        " alt="Bethlehem">
         <h3>Bethlehem</h3>
-        <p>City known for its history and culture.</p>
+        <p>A historic city with significant religious importance for Christians.</p>
       </div>
-      <!-- Repeat for all governorates (Hebron, Jenin, Jericho, etc.) -->
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/BTS_Hebron_Tour_280215_24.jpg/1024px-BTS_Hebron_Tour_280215_24.jpg
+        " alt="Hebron">
+        <h3>Hebron</h3>
+        <p>The largest city in the West Bank, home to the Tomb of the Patriarchs.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Jenin-new.jpg
+        " alt="Jenin">
+        <h3>Jenin</h3>
+        <p>An agricultural city and a symbol of the Palestinian struggle.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Jericho_cityscape_from_wall_ruins.jpg/1024px-Jericho_cityscape_from_wall_ruins.jpg
+        " alt="Jericho">
+        <h3>Jericho</h3>
+        <p>One of the oldest continuously inhabited cities in the world.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/%D9%85%D8%B3%D8%AC%D8%AF_%D8%A7%D9%84%D9%86%D8%B5%D8%B1_%D9%81%D9%8A_%D9%85%D8%AF%D9%8A%D9%86%D8%A9_%D9%86%D8%A7%D8%A8%D9%84%D8%B3_%D9%81%D9%8A_%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D8%A9_%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D9%85%D8%A9.jpg/1024px-%D9%85%D8%B3%D8%AC%D8%AF_%D8%A7%D9%84%D9%86%D8%B5%D8%B1_%D9%81%D9%8A_%D9%85%D8%AF%D9%8A%D9%86%D8%A9_%D9%86%D8%A7%D8%A8%D9%84%D8%B3_%D9%81%D9%8A_%D8%A7%D9%84%D8%A8%D9%84%D8%AF%D8%A9_%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D9%85%D8%A9.jpg
+        " alt="Nablus">
+        <h3>Nablus</h3>
+        <p>Famous for its sweets and olive oil soap, a key commercial hub.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/%D9%82%D9%84%D9%82%D9%8A%D9%84%D9%8A%D8%A9.jpg" alt="Qalqilya">
+        <h3>Qalqilya</h3>
+        <p>Known for its agriculture and its unique zoo.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/%D7%94%D7%A8_%D7%94%D7%91%D7%99%D7%AA_%D7%9E%D7%93%D7%A8%D7%95%D7%9D_%D7%9E%D7%A2%D7%A8%D7%91.jpg/1024px-%D7%94%D7%A8_%D7%94%D7%91%D7%99%D7%AA_%D7%9E%D7%93%D7%A8%D7%95%D7%9D_%D7%9E%D7%A2%D7%A8%D7%91.jpg" alt="Quds (Jerusalem)">
+        <h3>Quds (Jerusalem)</h3>
+        <p>A holy city significant to Islam, Christianity, and Judaism.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Psagot_Settlement.JPG/1024px-Psagot_Settlement.JPG" alt="Ramallah">
+        <h3>Ramallah</h3>
+        <p>The political and administrative center of the Palestinian Authority.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.A3dnBBlIZ5cnSPGsIjwTngHaE9?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Deir al-Balah">
+        <h3>Deir al-Balah</h3>
+        <p>Known for its date palms and archaeological sites in Gaza Strip.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Gaza_City.JPG/800px-Gaza_City.JPG" alt="Gaza">
+        <h3>Gaza</h3>
+        <p>A coastal city with a long history of trade and culture.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Israeli_destruction_on_al-Seqaly_Street_in_Khan_Younis%2C_Gaza_War%2C_June_11_2024.jpg/800px-Israeli_destruction_on_al-Seqaly_Street_in_Khan_Younis%2C_Gaza_War%2C_June_11_2024.jpg" alt="Khan Yunis">
+        <h3>Khan Yunis</h3>
+        <p>A major city in Gaza Strip and an agricultural hub.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/An_aerial_view_showing_destruction_in_Rafah_after_Israeli_forces_withdrawal_and_as_the_ceasefire_took_hold%2C_Gaza_Strip.jpg/800px-An_aerial_view_showing_destruction_in_Rafah_after_Israeli_forces_withdrawal_and_as_the_ceasefire_took_hold%2C_Gaza_Strip.jpg" alt="Rafah">
+        <h3>Rafah</h3>
+        <p>A crucial border city connecting Gaza Strip with Egypt.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Tulkarm_Municipality_01.jpg/800px-Tulkarm_Municipality_01.jpg" alt="Tulkarm">
+        <h3>Tulkarm</h3>
+        <p>A West Bank city playing a vital economic role.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Tubas.jpg/800px-Tubas.jpg" alt="Tubas">
+        <h3>Tubas</h3>
+        <p>A northern West Bank city known for agriculture and nature.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Salfit2024.jpg/800px-Salfit2024.jpg" alt="Salfit">
+        <h3>Salfit</h3>
+        <p>Located in the heart of the West Bank, famous for olive oil.</p>
+      </div>
+
     </div>
   </section>
 
-  <!-- Contact Form -->
-  <section id="contact" class="contact-form">
-    <h2>Contact Me</h2>
-    <form>
-      <label>Name: <input type="text" name="name" required></label><br>
-      <label>Subject: <input type="text" name="subject" required></label><br>
-      <label>Phone: <input type="number" name="phone" required></label><br>
-      <label>Email: <input type="email" name="email" pattern=".+@ftu\.ac\.th" required></label><br>
-      <label>Secret Word: 
+
+    <section id="contact" class="contact-form">
+        <h2>Contact Me</h2>
+        <form>
+            <label>Name
+                <input type="text" name="name" required>
+            </label>
+            <label>Subject
+                <input type="text" name="subject" required>
+            </label>
+            <label>Phone
+                <input type="number" name="phone" required>
+            </label>
+            <label>Email
+                <input type="email" name="email" pattern=".+@ftu\.ac\.th" required>
+            </label>
+            <label>Secret Word
         <input type="password" name="secret" minlength="8"
-               pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[\W_]).{8,}" required>
-      </label><br>
-      <label>Message: <textarea name="message" required></textarea></label><br>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+          pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[\W_]).{8,}" required>
+      </label>
+            <label>Message
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-  <!-- Footer -->
-  <footer id="footer">
-    <p>&copy; 2025 Midterm Challenge. All rights reserved.</p>
-  </footer>
+    <footer id="footer">
+        <p>&copy; 2025 Midterm Challenge Web.</p>
+    </footer>
 
-  <!-- Go to Top Button -->
-  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="top-btn">⬆ Top</button>
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="top-btn">⬆ Top</button>
 </body>
 </html>

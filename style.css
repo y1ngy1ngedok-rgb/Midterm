@@ -1,13 +1,18 @@
+/* Reset & Font */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
 }
 
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: #333;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .navbar .nav-links {
@@ -19,52 +24,161 @@ body {
 .navbar .nav-links a {
   color: white;
   text-decoration: none;
+  font-size: 14px;
 }
 
+.logo-svg {
+        width: 100%;
+        height: auto;
+        max-width: 80px; /* Desktop max size */
+      }
+
 .mindset {
-  height: 50vh; /* half laptop screen height */
+  height: 50vh; /* ครึ่งหน้าจอ */
+  background: url('https://youimg1.tripcdn.com/target/0103l1200083ipj4zAA48_D_1180_558.jpg') no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: lightgray;
+  text-align: center;
+  position: relative;
+  color: rgb(255, 255, 255);
+  filter: brightness(0.7);
 }
 
+.mindset h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.mindset p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* Governorates Section */
 .cards {
-  padding: 20px;
+  padding: 40px 20px;
+}
+
+.cards h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .card {
-  background: #f9f9f9;
-  padding: 15px;
-  border-radius: 8px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+.card p {
+  padding: 0 15px 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Contact Form (Medium Size, Minimal) */
 .contact-form {
-  padding: 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #333;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 15px;
+  margin-top: 30px;
 }
 
 .top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .navbar { display: none; }
-  .tab-bar { display: block; } /* You’ll need to add tab-bar div */
-}
-
-@media (max-width: 768px) {
-  .navbar, .tab-bar { display: none; }
-  .hamburger { display: block; } /* You’ll need to add hamburger menu */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
 }
