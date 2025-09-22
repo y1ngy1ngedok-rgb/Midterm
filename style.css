@@ -30,7 +30,7 @@ body {
 .logo-svg {
         width: 100%;
         height: auto;
-        max-width: 80px; /* Desktop max size */
+        max-width: 60px; /* Desktop max size */
       }
 
 .mindset {
